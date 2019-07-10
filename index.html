@@ -48,7 +48,7 @@
 </section>
 
 <section class="slide">
-    <img src="samples/illusions/dress.jpg" class="cover w" alt="Платье белозолотое или черносинее">
+    <img src="samples/illusions/dress.jpg" class="cover w" alt="Платье бело-золотое или черно-синее">
 </section>
 
 <section class="slide">
@@ -59,6 +59,144 @@
     <img src="samples/illusions/dots.png" class="cover w place t" alt="Разная яркость одинаковых точек">
 </section>
 
+<section class="slide">
+    <img src="samples/test-cms/test-cms.jpg" class="cover h">
+</section>
+
+<section class="slide">
+    <img src="samples/test-cms/test-cms-info-panel.jpg" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/test-cms/test-cms-without-profile.jpg" class="cover h">
+</section>
+
+<section class="slide">
+    <img src="samples/test-cms/test-cms-color-picker.png" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/cie/cie-logo.png" class="cover" style="width: 90%;"
+            alt="Commission internationale de l'éclairage">
+    <footer>
+        Основание 1913 году. В 1931 создают стандарт CIE1931
+    </footer>
+</section>
+
+<section class="slide">
+    <img src="samples/cie/planckian-locus.png" class="cover h" alt="CIExy color space and Planckian Locus">
+</section>
+
+<section class="slide">
+    <img src="samples/cie/response-curves.gif" class="cover w">
+</section>
+
+<section class="slide">
+    <h2>Основные цветовые пространства</h2>
+    <p>CIE 1931 XYZ</p>
+    <p>CIE 1976 L*a*b*</p>
+</section>
+
+<section class="slide">
+    <p>Иллюстрация: «сканирование - обработка - печать» или «фото - обработка - печать»</p>
+</section>
+
+<section class="slide">
+    <h2 class="shout">
+        Цветовые<br/>профили
+    </h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout">
+        International<br>
+        Color<br/>
+        Consortium
+    </h2>
+    <footer>
+        Основан в 1993 году
+    </footer>
+</section>
+
+<section class="slide">
+    <h2>Цветовые профили</h2>
+    <p>Каждое устройство ввода или вывода снабжается профилем,
+        который однозначно определяет преобразование в&nbsp;CIEXYZ или CIELAB и&nbsp;обратно.</p>
+</section>
+
+<section class="slide">
+    <img src="samples/cie/cie1931xy-gamut-comparison.svg" class="cover h">
+</section>
+
+<section class="slide">
+    <img src="samples/prophoto/prophoto-color-picker.png" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/tulips/tulips-srgb.jpg" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/tulips/tulips-srgb-gamut-warning.jpg" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/ocean/ocean-srgb.jpg" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/ocean/ocean-srgb-gamut-warning.jpg" class="cover w">
+</section>
+
+<section class="slide">
+    <img src="samples/cie/display-comparison.svg" class="cover h">
+</section>
+
+<section class="slide">
+    <h2>Медиа-запросы</h2>
+    <pre>
+        <code>@media (color-gamut: srgb) { }</code>
+        <code>@media (color-gamut: p3) { }</code>
+        <code>@media (color-gamut: rec2020) { }</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2>Медиа-запросы</h2>
+    <pre>
+        <code>&lt;picture></code>
+        <code>  &lt;source media="(color-gamut: rec2020)"</code>
+        <code>      src="image@rec2020.jpg"></code>
+        <code>  &lt;source media="(color-gamut: p3)"</code>
+        <code>      src="image@p3.jpg"></code>
+        <code>  &lt;img src="image.jpg"><span class="comment">&lt;!-- sRGB --></span></code>
+        <code>&lt;/picture></code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2>Версии профилей</h2>
+    <p>v2</p>
+    <p>v4</p>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/srgb.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/prophoto.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/cmyk.mp4" type="video/mp4">
+    </video>
+</section>
 
 <div class="progress"></div>
 
