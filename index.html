@@ -68,7 +68,8 @@
         <span class="place">Convert to sRGB</span>
     </div>
     <footer>
-        Photo by <a href="https://unsplash.com/@danielkorpai" target="_blank" rel="noopener noreferrer">Daniel Korpai</a> on Unsplash
+        Photo by <a href="https://unsplash.com/@danielkorpai" target="_blank" rel="noopener noreferrer">Daniel
+        Korpai</a> on Unsplash
     </footer>
 </section>
 
@@ -88,52 +89,80 @@
     <img src="samples/illusions/dots.png" class="cover w place t" alt="Разная яркость одинаковых точек">
 </section>
 
-<section class="slide">
-    <img src="samples/test-cms/test-cms.jpg" class="cover h">
+<section class="slide clear">
+    <img src="samples/test-cms/test-cms.jpg" class="cover h" alt="Тест на правильную работу с цветовыми профилем">
+</section>
+
+<section class="slide clear">
+    <img src="samples/test-cms/test-cms-info-panel.jpg" class="cover w"
+            alt="Пипетка показывает, что цвет должен быть красным">
+</section>
+
+<section class="slide clear">
+    <img src="samples/test-cms/test-cms-color-picker.png" class="cover w"
+            alt="Сравнение двух палитр с разными цветовыми профилями">
+</section>
+
+<section class="slide clear">
+    <img src="samples/test-cms/test-cms-without-profile.jpg" class="cover h" alt="Тест с отключенным цветовым профилем">
 </section>
 
 <section class="slide">
-    <img src="samples/test-cms/test-cms-info-panel.jpg" class="cover w">
-</section>
-
-<section class="slide">
-    <img src="samples/test-cms/test-cms-without-profile.jpg" class="cover h">
-</section>
-
-<section class="slide">
-    <img src="samples/test-cms/test-cms-color-picker.png" class="cover w">
-</section>
-
-<section class="slide">
-    <img src="samples/cie/cie-logo.png" class="cover" style="width: 90%;"
-            alt="Commission internationale de l'éclairage">
+    <h2>Международная комиссия по&nbsp;освещению</h2>
+    <img src="samples/cie/cie-logo.png" style="width: 100%;" alt="Commission internationale de l'éclairage">
     <footer>
-        Основание 1913 году. В 1931 создают стандарт CIE1931
+        Международная комиссия по освещению. Основана 1913 году. В 1931 создает стандарт CIE1931.
     </footer>
 </section>
 
 <section class="slide">
+    <img src="samples/cie/response-curves.gif" class="cover w" alt="Кривые отклика">
+    <footer>
+        Источник: <a href="https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a"
+            target="_blank" rel="noopener noreferrer">A Beginner’s Guide to (CIE) Colorimetry</a>
+    </footer>
+</section>
+
+<section class="slide">
+    <h2 class="place" style="text-align: center">
+        CIE 1931 XYZ<br><br>
+        <span class="next">CIE 1976 L*a*b*</span>
+    </h2>
+</section>
+
+<section class="slide clear">
     <img src="samples/cie/planckian-locus.png" class="cover h" alt="CIExy color space and Planckian Locus">
 </section>
 
 <section class="slide">
-    <img src="samples/cie/response-curves.gif" class="cover w" alt="Кривые отклика">
-</section>
-
-<section class="slide">
-    <h2>Основные цветовые пространства</h2>
-    <p>CIE 1931 XYZ</p>
-    <p>CIE 1976 L*a*b*</p>
-</section>
-
-<section class="slide">
-    <p>Иллюстрация: «сканирование - обработка - печать» или «фото - обработка - печать»</p>
-</section>
-
-<section class="slide">
     <h2 class="shout">
-        Цветовые<br/>профили
+        <a href="https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a"
+                target="_blank" rel="noopener noreferrer">A&nbsp;Beginner&rsquo;s Guide&nbsp;to (CIE) Colorimetry</a>
     </h2>
+</section>
+
+<section class="slide">
+    <h2>Цветовые профили</h2>
+    <p>Каждое устройство ввода или вывода снабжается профилем, который однозначно определяет
+        преобразование в&nbsp;CIEXYZ или CIELAB и&nbsp;обратно.</p>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/srgb.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/prophoto.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="slide clear">
+    <video controls loop preload="auto" class="cover h">
+        <source src="samples/3d/cmyk.mp4" type="video/mp4">
+    </video>
 </section>
 
 <section class="slide">
@@ -147,37 +176,43 @@
     </footer>
 </section>
 
-<section class="slide">
-    <h2>Цветовые профили</h2>
-    <p>Каждое устройство ввода или вывода снабжается профилем,
-        который однозначно определяет преобразование в&nbsp;CIEXYZ или CIELAB и&nbsp;обратно.</p>
+<section class="slide clear">
+    <img src="samples/cie/cie1931xy-gamut-comparison.svg" class="cover h"
+            alt="Сравнение нескольких популярных цветовых профилей">
 </section>
 
 <section class="slide">
-    <img src="samples/cie/cie1931xy-gamut-comparison.svg" class="cover h">
+    <img src="samples/icc/response-curve.jpg" alt="Кривые отклика в разных профилях" class="cover w"/>
+</section>
+
+<section class="slide clear">
+    <img src="samples/prophoto/prophoto-color-picker.png" class="cover w"
+            alt="Искажения цветового пространства при конвертации">
 </section>
 
 <section class="slide">
-    <img src="samples/prophoto/prophoto-color-picker.png" class="cover w">
+    <img src="samples/tulips/tulips-srgb.jpg" class="cover w" alt="Тюльпаны в саду Версаля">
 </section>
 
 <section class="slide">
-    <img src="samples/tulips/tulips-srgb.jpg" class="cover w">
+    <img src="samples/tulips/tulips-srgb-gamut-warning.jpg" class="cover w"
+            alt="Тюльпаны в саду Версаля с отметкой искаженных цветов">
 </section>
 
 <section class="slide">
-    <img src="samples/tulips/tulips-srgb-gamut-warning.jpg" class="cover w">
+    <img src="samples/ocean/ocean-srgb.jpg" class="cover w" alt="Океан и вилла на берегу (остров Тенерифе)">
 </section>
 
 <section class="slide">
-    <img src="samples/ocean/ocean-srgb.jpg" class="cover w">
+    <img src="samples/ocean/ocean-srgb-gamut-warning.jpg" class="cover w"
+            alt="Океан и вилла на берегу (остров Тенерифе) с отметкой искаженных цветов">
 </section>
 
 <section class="slide">
-    <img src="samples/ocean/ocean-srgb-gamut-warning.jpg" class="cover w">
+    <h2 class="shout">Будущее уже вокруг нас</h2>
 </section>
 
-<section class="slide">
+<section class="slide clear">
     <img src="samples/cie/display-comparison.svg" class="cover h">
 </section>
 
@@ -204,31 +239,30 @@
 </section>
 
 <section class="slide">
-    <h2>Версии профилей</h2>
-    <p>v2</p>
-    <p>v4</p>
+    <h2 class="shout">
+        <a href="samples/media-color-gamut/index.html" target="_blank" rel="noopener noreferrer">Демо</a>
+    </h2>
 </section>
 
 <section class="slide">
-    <img src="samples/icc/response-curve.jpg" alt="Кривые отклика в разных профилях" class="cover w"/>
+    <h2>Плюсы</h2>
+    <ul>
+        <li value="✔" class="next">Специально подготовленные иллюстрации выглядят эффектнее на соответствующих
+            дисплеях
+        </li>
+        <li value="✔" class="next">Автоматическая конвертация в профиль устройства вывода</li>
+        <li value="✔" class="next">Есть поддержка во всех современных OS и браузерах<sup>*</sup></li>
+        <li value="🤷‍♂️" class="next">В Firefox по-умолчанию выключена поддержка профилей v4</li>
+    </ul>
 </section>
 
-<section class="slide clear">
-    <video controls loop preload="auto" class="cover h">
-        <source src="samples/3d/srgb.mp4" type="video/mp4">
-    </video>
-</section>
-
-<section class="slide clear">
-    <video controls loop preload="auto" class="cover h">
-        <source src="samples/3d/prophoto.mp4" type="video/mp4">
-    </video>
-</section>
-
-<section class="slide clear">
-    <video controls loop preload="auto" class="cover h">
-        <source src="samples/3d/cmyk.mp4" type="video/mp4">
-    </video>
+<section class="slide">
+    <h2>Минусы</h2>
+    <ul>
+        <li value="✘" class="next">Файлы становятся больше на 1-3 Кбайт из-за внедрённого профиля</li>
+        <li value="✘" class="next">Слабая поддержка средствами оптимизации и CDN</li>
+        <li value="✘" class="next">Нет согласования с цветами из CSS</li>
+    </ul>
 </section>
 
 <div class="progress"></div>
