@@ -11,22 +11,38 @@
             --color-key: #6699cc;
         }
 
-        .slide-cover p,
-        .slide-cover h2 {
+        #cover p,
+        #cover h2 {
             color: white;
             text-align: center;
         }
 
-        .slide-cover h2 {
+        #cover h2 {
             font-size: 112px;
         }
 
-        .slide-cover p {
+        #cover p {
             font-size: 48px;
         }
 
-        .slide-cover img {
+        #cover img {
             opacity: 0.75;
+        }
+
+        #intro .next {
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        #intro .next.active {
+            opacity: 1;
+        }
+
+        #intro .text {
+            background: white;
+            font-size: 112px;
+            line-height: 1.1;
+            text-align: center;
         }
     </style>
 </head>
@@ -37,25 +53,38 @@
     <p>Владимир Кузнецов</p>
 </header>
 
-<section class="slide clear black slide-cover" id="cover">
+<section class="slide clear black" id="cover">
     <img src="samples/cover.jpg" alt="Разноцветные гибкие пластинки" class="cover w h">
     <h2>Все цвета радуги</h2>
     <p>Владимир Кузнецов</p>
 </section>
 
-<section class="slide">
+<section class="slide clear" id="intro">
+    <div class="columns two">
+        <img src="samples/intro/camera.jpg" class="cover h place l next" alt="Camera">
+        <img src="samples/intro/devices.jpg" class="cover h place r next" alt="Devices">
+    </div>
+    <div class="cover w h text next" lang="en">
+        <span class="place">Convert to sRGB</span>
+    </div>
+    <footer>
+        Photo by <a href="https://unsplash.com/@danielkorpai" target="_blank" rel="noopener noreferrer">Daniel Korpai</a> on Unsplash
+    </footer>
+</section>
+
+<section class="slide clear">
     <h2 class="shout">Цвет &mdash; субъективная характеристика</h2>
 </section>
 
-<section class="slide">
+<section class="slide clear">
     <img src="samples/illusions/dress.jpg" class="cover w" alt="Платье бело-золотое или черно-синее">
 </section>
 
-<section class="slide">
+<section class="slide clear">
     <img src="samples/illusions/balls.jpg" class="cover w" alt="Коричневые шарики">
 </section>
 
-<section class="slide">
+<section class="slide clear">
     <img src="samples/illusions/dots.png" class="cover w place t" alt="Разная яркость одинаковых точек">
 </section>
 
@@ -88,7 +117,7 @@
 </section>
 
 <section class="slide">
-    <img src="samples/cie/response-curves.gif" class="cover w">
+    <img src="samples/cie/response-curves.gif" class="cover w" alt="Кривые отклика">
 </section>
 
 <section class="slide">
